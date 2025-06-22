@@ -1,5 +1,10 @@
-/* Necklaces Page Specific Styles */
-.necklaces-main {
+/* Collection Pages Main Styles */
+.necklaces-main,
+.bracelets-main,
+.rings-main,
+.earrings-main,
+.accessories-main,
+.jewellerykits-main {
     padding: 40px 5%;
     max-width: 1400px;
     margin: 0 auto;
@@ -8,70 +13,6 @@
 .page-header {
     text-align: center;
     margin-bottom: 40px;
-}
-
-.page-header h1 {
-    font-family: 'Didot', serif;
-    font-size: 2.8rem;
-    color: #2c2c2c;
-    margin-bottom: 15px;
-    letter-spacing: 1px;
-}
-
-.page-header p {
-    color: #666;
-    font-size: 1.2rem;
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-/* Filters */
-/* Necklaces Page Specific Styles */
-.necklaces-main {
-    padding: 40px 5%;
-    max-width: 1400px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.page-header {
-    text-align: center;
-    margin-bottom: 40px;
-    width: 100%;
-}
-
-.page-header h1 {
-    font-family: 'Didot', serif;
-    font-size: 2.8rem;
-    color: #2c2c2c;
-    margin-bottom: 15px;
-    letter-spacing: 1px;
-}
-
-.page-header p {
-    color: #666;
-    font-size: 1.2rem;
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-/* Filters */
-/* Necklaces Page Specific Styles */
-.necklaces-main {
-    padding: 40px 5%;
-    max-width: 1400px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.page-header {
-    text-align: center;
-    margin-bottom: 40px;
-    width: 100%;
 }
 
 .page-header h1 {
@@ -97,7 +38,6 @@
     margin-bottom: 40px;
     flex-wrap: wrap;
     gap: 20px;
-    width: 100%;
 }
 
 .filter-options {
@@ -118,6 +58,13 @@
     text-align: center;
 }
 
+.filter:hover,
+.filter.active {
+    background: #f4a9a9;
+    color: white;
+    border-color: #f4a9a9;
+}
+
 .sort-options {
     display: flex;
     justify-content: center;
@@ -129,7 +76,6 @@
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 30px;
     width: 100%;
-    justify-items: center;
 }
 
 .product-card {
@@ -141,21 +87,7 @@
     position: relative;
     max-width: 280px;
     width: 100%;
-}
-/* Product Grid */
-.product-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 30px;
-}
-
-.product-card {
-    background: white;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-    transition: all 0.3s ease;
-    position: relative;
+    justify-self: center;
 }
 
 .product-card:hover {
@@ -192,7 +124,7 @@
     text-align: center;
 }
 
-.product-info h2 {
+.product-info h3 {
     font-family: 'Didot', serif;
     font-size: 1.3rem;
     margin-bottom: 10px;
@@ -208,11 +140,14 @@
 
 .product-actions {
     display: flex;
-    flex-direction: column;
-    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
 }
 
-.add-to-cart {
+.product-actions .add-to-cart {
+    flex-grow: 1;
+    margin-right: 10px;
     background: #333;
     color: white;
     border: none;
@@ -223,10 +158,29 @@
     transition: all 0.3s ease;
 }
 
-.add-to-cart:hover {
+.product-actions .add-to-cart:hover {
     background: #f4a9a9;
 }
 
+.product-actions .add-to-wishlist {
+    background: none;
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    transition: all 0.3s;
+}
+
+.product-actions .add-to-wishlist:hover,
+.product-actions .add-to-wishlist.active {
+    border-color: #f4a9a9;
+    color: #f4a9a9;
+}
+
+.product-actions .add-to-wishlist.active .fa-heart {
+    font-weight: 900;
+}
 
 /* Responsive Design */
 @media (max-width: 1024px) {
