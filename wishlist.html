@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Collections - Aura & Co</title>
+    <title>My Wishlist - Aura & Co.</title>
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/collections.css">
+    <link rel="stylesheet" href="css/cart.css"> <!-- Reusing cart styles for consistency -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Didot:wght@400;700&display=swap" rel="stylesheet">
     <script defer src="js/jewelry.js"></script>
+    <script defer src="js/wishlist.js"></script>
 </head>
-
 <body class="custom-bg">
 
     <!-- Navigation Bar -->
@@ -35,7 +34,7 @@
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="shop.html">Shop</a></li>
-            <li><a href="collections.html" class="active">Collections</a></li>
+            <li><a href="collections.html">Collections</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
@@ -51,80 +50,19 @@
         </div>
     </nav>
 
-    <section class="collections-header">
-        <div class="header-content">
-            <h1>Discover Our Collections</h1>
-            <p>Explore our curated selection of fine jewelry pieces</p>
-        </div>
-    </section>
-
-    <section class="collections-grid">
-        <div class="collection-card">
-            <div class="collection-image">
-                <img src="Images/ring4.jpg" alt="Rings Collection">
+    <!-- Main Content: Wishlist -->
+    <main class="cart-page">
+        <div class="cart-container">
+            <h1>My Wishlist</h1>
+            <div class="cart-items">
+                <!-- Wishlist items will be dynamically inserted here -->
             </div>
-            <div class="collection-info">
-                <h3>Rings</h3>
-                <p>Timeless rings in gold, silver, and platinum</p>
-                <a href="rings.html" class="collection-link">Shop Collection →</a>
+            <div class="cart-empty-message">
+                <p>Your wishlist is currently empty.</p>
+                <a href="shop.html" class="cta-button">Discover Products</a>
             </div>
         </div>
-        
-        <div class="collection-card">
-            <div class="collection-image">
-                <img src="Images/ear14.jpg" alt="Earrings Collection">
-            </div>
-            <div class="collection-info">
-                <h3>Earrings</h3>
-                <p>Studs, hoops, and drop earrings for every occasion</p>
-                <a href="earrings.html" class="collection-link">Shop Collection →</a>
-            </div>
-        </div>
-        
-        <div class="collection-card">
-            <div class="collection-image">
-                <img src="Images/nec10.jpg" alt="Necklaces Collection">
-            </div>
-            <div class="collection-info">
-                <h3>Necklaces</h3>
-                <p>Statement and minimalist necklaces to suit your style</p>
-                <a href="necklaces.html" class="collection-link">Shop Collection →</a>
-            </div>
-        </div>
-        
-        <div class="collection-card">
-            <div class="collection-image">
-                <img src="Images/brac8.jpg" alt="Bracelets Collection">
-            </div>
-            <div class="collection-info">
-                <h3>Bracelets</h3>
-                <p>Bangles, cuffs, and charm bracelets</p>
-                <a href="bracelets.html" class="collection-link">Shop Collection →</a>
-            </div>
-        </div>
-        
-        <div class="collection-card">
-            <div class="collection-image">
-                <img src="Images/acc4.jpg" alt="Accessories Collection">
-            </div>
-            <div class="collection-info">
-                <h3>Accessories</h3>
-                <p>Complementary jewelry pieces to complete your look</p>
-                <a href="accessories.html" class="collection-link">Shop Collection →</a>
-            </div>
-        </div>
-        
-        <div class="collection-card">
-            <div class="collection-image">
-                <img src="Images/kit10.jpg" alt="Personalized Jewelry">
-            </div>
-            <div class="collection-info">
-                <h3>Personalized Jewelry</h3>
-                <p>Create something uniquely yours with our custom engraving and design options.</p>
-                <a href="personalizedjewelry.html" class="collection-link">Shop Now →</a>
-            </div>
-        </div>
-    </section>
+    </main>
 
     <!-- Footer -->
     <footer class="footer">
@@ -164,6 +102,5 @@
             </div>
         </div>
     </footer>
-
 </body>
-</html>
+</html> 
