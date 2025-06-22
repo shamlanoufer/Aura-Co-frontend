@@ -2,7 +2,7 @@
 
 Welcome to the official repository for the **Aura & Co.** jewelry e-commerce website. This project is a beautifully crafted frontend experience designed to showcase a luxurious collection of fine jewelry. With a clean, elegant design and responsive layout, Aura & Co. provides a seamless user experience across all devices.
 
-![Aura & Co. Homepage](https://i.imgur.com/YOUR_HOMEPAGE_SCREENSHOT.png) <!-- Replace with a real screenshot URL -->
+![Aura & Co. Homepage](https://github.com/user-attachments/assets/d30568f3-02d8-4f77-acfb-63d73026b9c5)
 
 ---
 
